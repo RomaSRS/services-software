@@ -1,0 +1,210 @@
+@font-face {
+  font-family: 'TT Lakes';
+  src: local('TT Lakes Bold'),
+       local('TTLakes-Bold'),
+       url(assets/fonts//TTLakes-Bold.eot) format('embedded-opentype'),
+       url(assets/fonts/TTLakes-Bold.ttf) format('truetype'),
+       url(assets/fonts/TTLakes-Bold.woff) format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Lakes';
+  src: local('TT Lakes Regular'),
+       local('TTLakes-Regular'),
+       url(assets/fonts/TTLakes-Regular.eot) format('embedded-opentype'),
+       url(assets/assets/fonts/TTLakes-Regular.ttf) format('truetype'),
+       url(assets/fonts/TTLakes-Regular.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Lakes';
+  src: local('TT Lakes Medium'),
+       local('TTLakes-Medium'),
+       url(assets/fonts/TTLakes-Medium.eot) format('embedded-opentype'),
+       url(assets/fonts/TTLakes-Medium.ttf) format('truetype'),
+       url(assets/fonts/TTLakes-Medium.woff) format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+.page {
+  padding: 0;
+  margin: auto;
+  font-family: 'TT Lakes', sans-sefir;
+  background-color: #F8F8F8;
+  color: #1B1C21;
+}
+
+.page-header {
+  background-color: #FFF;
+}
+
+.page__size {
+  min-width: 320px;
+}
+
+.nav {
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+}
+
+.nav__nav-content {
+  height: 88px;
+  border-bottom: 1px solid #D9FFF5;
+}
+
+.link-btn {
+  display: inline-block;
+  font-size: 0px;
+  border: none;
+  outline: none;
+  opacity: 0.6;
+}
+
+.nav__link__btn-size {
+  border-radius: 20px;
+  height: 40px;
+  width: 40px;
+  margin-right: 16px;
+}
+
+.nav-btn__burger {
+  background: url(assets/images/burger.svg);
+  margin-left: 16px;
+}
+
+.nav-btn__requestCall {
+  background: url(assets/images/call.svg);
+}
+
+.nav-btn__feedback {
+  background: url(assets/images/chat.svg);
+}
+
+.nav-btn__profile {
+  background: url(assets/images/profile.svg);
+}
+
+.nav-btn__repair {
+  background: url(assets/images/repair.svg);
+}
+
+.nav-btn__checkStatus {
+  background: url(assets/images/checkstatus.svg);
+}
+
+.nav-content__logo {
+  margin-right: auto;
+  transition: all 0.3s;
+}
+
+.nav-content__logo:hover {
+  cursor: pointer;
+  animation: ease-out 2.4s flashing infinite;
+}
+
+.nav__separation {
+  margin: 0 20px 0 16.73px;
+  height: 32px;
+  border: 1px solid #EAEAEA;
+}
+
+.link-btn:hover {
+  cursor: pointer;
+}
+
+.link-btn:focus {
+  transition: ease-in 0.1s;
+  opacity: 1;
+  box-shadow: 0px 0px 3px 0.5px #ff8bae;
+}
+
+.header__content__title {
+  font-size: 28px;
+  letter-spacing: -0.6px;
+  margin: 0;
+  padding: 24px 16px;
+  background: #F8F8F8;
+}
+
+.header__content__title::before {
+  content: url(assets/images/highlight.svg);
+  position: absolute;
+  left: 0px;
+  color: #41F6D7;
+}
+
+.link-btn__text {
+  margin-right: 40px;
+  padding-left: 5px;
+}
+
+
+@media (max-width: 767px), (min-width: 1120px) {
+
+  .nav-btn__requestCall, 
+  .nav-btn__feedback, 
+  .nav-btn__profile,
+  .nav__separation:first-of-type {
+    display: none;
+  }
+
+@media (min-width: 768px) {
+  .page_size {
+    min-width: 768px;
+  }
+  
+  .nav__nav-content {
+    margin: 0 8px;
+  }
+
+  .header__content__title {
+    padding-left: 24px;
+  }
+}
+
+  @media (min-width: 1120px) {
+    .page__size {
+      min-width: 1120px;
+      max-width: 1440px;
+    }
+
+    .header__content {
+      background-color: inherit;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-end;
+    }
+
+    .nav-btn__burger, 
+    .nav-content__logo, 
+    .nav__separation {
+      display: none;
+    }
+
+    .link-btn {
+      width: auto;
+      font-family: inherit;
+      font-weight: 500;
+      font-size: 16px;
+      opacity: 0.8;
+      background-position: 100%;
+      background-repeat: no-repeat;
+    }
+  
+    .header__content__title {
+      padding: 0 0 0 32px;
+    }
+
+    .nav__nav-content {
+      height: 80px;
+    align-items: flex-end;
+    border: none;
+    }
+  }
