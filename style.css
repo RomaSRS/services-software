@@ -40,7 +40,7 @@
 }
 
 .page-header {
-  background-color: #FFF;
+  background: #FFFFFF;
 }
 
 .page__size {
@@ -250,5 +250,120 @@
   .menu {
     flex-wrap: wrap;
     overflow-x: hidden;
+  }
+}
+
+.main__section-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.article {
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+}
+
+.article__article-wrapper {
+  margin: 24px 16px 16px;
+  max-height: 90px;
+  overflow: hidden;
+}
+
+.article__paragraph {
+  margin-top: 0;
+  margin-bottom: 16px;
+} 
+
+.card__btn {
+  font-family: "TT Lakes", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  min-height: 24px;
+  padding: 4px 4px 4px 30px;
+  position: relative;
+  margin: 10px 0 0 16px;
+  outline: none;
+  display: inline-block;
+  background-color: #FFFFFF00;
+  border: 2px solid #41F6D700;
+  border-radius: 4px;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+.card__btn::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 4px;
+  left: 4px;
+  background: url("assets/images/expand.svg") 50% no-repeat;
+  transition: all 0.5s ease-in-out;
+}
+
+.card__btn:hover::before {
+  transform: rotate(360deg) scale(1.5);
+}
+
+.card__btn:hover {
+  background-color: #FFFFFF;
+  border: 2px solid #41F6D7;
+}
+
+.card__btn:focus {
+  border: 2px solid #41F6D7;
+}
+
+.card__btn:active {
+  background-color: #EEEEEE;
+  border: 2px solid #41F6D7;
+}
+
+.main-block__image-wrapper {
+  flex: 1 0 320px;
+}
+
+.main-block__image {
+  width: 100%;
+  margin: 5% 0;
+}
+
+.link-button__text {
+  margin-right: 40px;
+  padding-left: 5px;
+}
+
+@media (min-width: 768px) {
+  .main-block__image-wrapper {
+    flex-basis: 360px;
+    margin: 0 24px;
+  }
+
+  .main-block__image {
+    border-radius: 6px;
+    margin: 0;
+  }
+
+  .article__article-wrapper {
+    max-height: 142px;
+    max-width: 312px;
+    margin: 0 24px;
+  }
+
+  .article__button {
+    margin: 10px 60px;
+  }
+}
+
+@media (min-width: 1120px) {
+  .article__article-wrapper {
+    max-width: 490px;
+    max-height: 160px;
   }
 }
