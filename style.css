@@ -39,8 +39,8 @@
   color: #1B1C21;
 }
 
-.page-header {
-  background: #FFFFFF;
+.header__content {
+  background-color: #FFFFFF;
 }
 
 .page__size {
@@ -132,16 +132,16 @@
   background: #F8F8F8;
 }
 
+.link-btn__text {
+  margin-right: 40px;
+  padding-left: 5px;
+}
+
 .header__content__title::before {
   content: url(assets/images/highlight.svg);
   position: absolute;
   left: 0px;
   color: #41F6D7;
-}
-
-.link-btn__text {
-  margin-right: 40px;
-  padding-left: 5px;
 }
 
 @media (max-width: 767px), (min-width: 1120px) {
@@ -213,7 +213,7 @@
   list-style: none;
 }
   
-.menu_offset {
+.menu_navigation {
   padding: 0;
   margin: 0 16px;
 }
