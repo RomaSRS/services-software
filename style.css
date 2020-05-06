@@ -39,8 +39,8 @@
   color: #1B1C21;
 }
 
-.page-header {
-  background: #FFFFFF;
+.header__content {
+  background-color: #FFFFFF;
 }
 
 .page__size {
@@ -53,7 +53,7 @@
   align-items: center;
 }
 
-.nav__nav-content {
+.nav__nav-content_size {
   height: 88px;
   border-bottom: 1px solid #D9FFF5;
 }
@@ -63,7 +63,6 @@
   font-size: 0px;
   border: none;
   outline: none;
-  opacity: 0.6;
 }
 
 .nav__link__btn-size {
@@ -122,9 +121,10 @@
   transition: ease-in 0.1s;
   opacity: 1;
   box-shadow: 0px 0px 3px 0.5px #ff8bae;
+  opacity: 0.6;
 }
 
-.header__content__title {
+.header-content__title {
   font-size: 28px;
   letter-spacing: -0.6px;
   margin: 0;
@@ -132,16 +132,16 @@
   background: #F8F8F8;
 }
 
-.header__content__title::before {
+.link-btn__text {
+  margin-right: 40px;
+  padding-left: 5px;
+}
+
+.header-content__title::before {
   content: url(assets/images/highlight.svg);
   position: absolute;
   left: 0px;
   color: #41F6D7;
-}
-
-.link-btn__text {
-  margin-right: 40px;
-  padding-left: 5px;
 }
 
 @media (max-width: 767px), (min-width: 1120px) {
@@ -158,11 +158,11 @@
     min-width: 768px;
   }
   
-  .nav__nav-content {
+  .nav__nav-content_size {
     margin: 0 8px;
   }
 
-  .header__content__title {
+  .header-content__title {
     padding-left: 24px;
   }
 }
@@ -191,16 +191,15 @@
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
-    opacity: 0.8;
     background-position: 100%;
     background-repeat: no-repeat;
   }
   
-  .header__content__title {
+  .header-content__title {
     padding: 0 0 0 32px;
   }
 
-  .nav__nav-content {
+  .nav__nav-content_size {
     height: 80px;
     align-items: flex-end;
     border: none;
@@ -213,7 +212,7 @@
   list-style: none;
 }
   
-.menu_offset {
+.menu__navigation {
   padding: 0;
   margin: 0 16px;
 }
@@ -241,9 +240,9 @@
 }
 
 @media (min-width: 768px) {
-  .main__section-flex {
+  .main-block__section-flex {
     margin-top: 32px;
-  } 
+  }
 }
 
 @media (min-width: 1120px) {
@@ -253,7 +252,7 @@
   }
 }
 
-.main__section-flex {
+.main-block__section-flex {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
