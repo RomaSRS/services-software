@@ -63,7 +63,6 @@
   font-size: 0px;
   border: none;
   outline: none;
-  opacity: 0.6;
 }
 
 .nav__link__btn-size {
@@ -122,6 +121,7 @@
   transition: ease-in 0.1s;
   opacity: 1;
   box-shadow: 0px 0px 3px 0.5px #ff8bae;
+  opacity: 0.6;
 }
 
 .header__content__title {
@@ -191,7 +191,6 @@
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
-    opacity: 0.8;
     background-position: 100%;
     background-repeat: no-repeat;
   }
