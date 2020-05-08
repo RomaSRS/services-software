@@ -63,6 +63,7 @@
   font-size: 0px;
   border: none;
   outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .link-btn_size {
@@ -100,6 +101,7 @@
 .nav-content__logo {
   margin-right: auto;
   transition: all 0.3s;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .nav-content__logo:hover {
