@@ -142,3 +142,74 @@
   opacity: 1;
 }
 
+.main__section-flex {
+  margin-top: 30px;
+}
+
+.section {
+  padding-bottom: 16px;
+}
+
+.nav-btn__requestCall {
+  background: url(../assets/images/call.svg);
+}
+
+.nav-btn__feedback {
+  background: url(../assets/images/chat.svg);
+  margin-left: 16px;
+}
+
+.nav-btn__profile {
+  background: url(../assets/images/profile.svg);
+  margin-left: 16px;
+}
+
+.section__mail {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  margin-bottom: 12px;
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.section__mail:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.section__phone-number {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+  margin: 0;
+}
+
+.section__phone-number:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.lang-switcher {
+  margin-top: 40px;
+}
+
+.lang-switcher__radio {
+  display: none;
+}
+
+.lang-switcher__label:hover {
+  cursor: pointer;
+}
+
+.lang-switcher__label {
+  margin-right: 6px;
+  transition: 0.3s;
+}
+
+.lang-switcher__radio:checked + .lang-switcher__label {
+  opacity: 0.5;
+}
