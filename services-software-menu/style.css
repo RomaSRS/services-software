@@ -100,3 +100,45 @@
   background: url(../assets/images/search.svg);
 }
 
+.menu {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.menu_navigation {
+  padding: 0;
+  margin: 16px 0 48px;
+}
+
+.menu__menu-item {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  margin-top: 32px;
+  font-weight: 500;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s;
+}
+
+.menu-link::before {
+  content: url(../assets/images/highlight.svg);
+  position: absolute;
+  left: 0px;
+  transform: scaleY(0.68) translateY(-13px);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.menu-link:hover {
+  color: #7E7E82;
+}
+
+.menu-link:hover::before {
+  opacity: 1;
+}
+
