@@ -1,0 +1,102 @@
+@font-face {
+  font-family: 'TT Lakes';
+  src: local('TT Lakes Bold'),
+       local('TTLakes-Bold'),
+       url(../assets/fonts/TTLakes-Bold.eot) format('embedded-opentype'),
+       url(../assets/fonts/TTLakes-Bold.ttf) format('truetype'),
+       url(../assets/fonts/TTLakes-Bold.woff) format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Lakes';
+  src: local('TT Lakes Regular'),
+       local('TTLakes-Regular'),
+       url(../assets/fonts/TTLakes-Regular.eot) format('embedded-opentype'),
+       url(../assets/assets/fonts/TTLakes-Regular.ttf) format('truetype'),
+       url(../assets/fonts/TTLakes-Regular.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Lakes';
+  src: local('TT Lakes Medium'),
+       local('TTLakes-Medium'),
+       url(../assets/fonts/TTLakes-Medium.eot) format('embedded-opentype'),
+       url(../assets/fonts/TTLakes-Medium.ttf) format('truetype'),
+       url(../assets/fonts/TTLakes-Medium.woff) format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+.page {
+  padding: 0;
+  margin: 0;
+  font-family: 'TT Lakes', sans-sefir;
+  background-color: #FFFFFF;
+  color: #1B1C21;
+  position: relative;
+}
+
+.page__dropdown-menu_size {
+  box-sizing: border-box;
+  width: 320px;
+  overflow-y: scroll;
+  padding: 24px;
+  padding-bottom: 32px;
+  box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2),
+             -2px 0px 4px rgba(69, 79, 126, 0.02);
+  display: flex;
+  flex-direction: column;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+}
+
+.nav__btn-size {
+  font-size: 0px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  opacity: 1;
+  transition: all 0.1s;
+}
+
+.link-btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.nav-btn__close {
+  background: url(../assets/images/close.svg);
+  margin-right: 16.73px;
+}
+
+.link-btn:hover {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+}
+
+.nav-content__logo {
+  margin-right: auto;
+}
+
+.nav-content__logo:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.nav-btn__search {
+  background: url(../assets/images/search.svg);
+}
+
