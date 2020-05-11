@@ -1,0 +1,219 @@
+@font-face {
+  font-family: 'TT Lakes';
+  src: local('TT Lakes Bold'),
+       local('TTLakes-Bold'),
+       url(../assets/fonts/TTLakes-Bold.eot) format('embedded-opentype'),
+       url(../assets/fonts/TTLakes-Bold.ttf) format('truetype'),
+       url(../assets/fonts/TTLakes-Bold.woff) format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Lakes';
+  src: local('TT Lakes Regular'),
+       local('TTLakes-Regular'),
+       url(../assets/fonts/TTLakes-Regular.eot) format('embedded-opentype'),
+       url(../assets/assets/fonts/TTLakes-Regular.ttf) format('truetype'),
+       url(../assets/fonts/TTLakes-Regular.woff) format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Lakes';
+  src: local('TT Lakes Medium'),
+       local('TTLakes-Medium'),
+       url(../assets/fonts/TTLakes-Medium.eot) format('embedded-opentype'),
+       url(../assets/fonts/TTLakes-Medium.ttf) format('truetype'),
+       url(../assets/fonts/TTLakes-Medium.woff) format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+.page {
+  padding: 0;
+  margin: 0;
+  font-family: 'TT Lakes', sans-sefir;
+  background-color: #FFFFFF;
+  color: #1B1C21;
+  position: relative;
+}
+
+.page__dropdown-menu_size {
+  box-sizing: border-box;
+  width: 320px;
+  overflow-y: scroll;
+  padding: 24px;
+  padding-bottom: 32px;
+  box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2),
+             -2px 0px 4px rgba(69, 79, 126, 0.02);
+  display: flex;
+  flex-direction: column;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+  display: flex;
+  justify-content: stretch;
+  align-items: center;
+}
+
+.nav__btn-size {
+  font-size: 0px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  height: 40px;
+  width: 40px;
+  padding: 0;
+  opacity: 1;
+  transition: all 0.1s;
+}
+
+.link-btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.nav-btn__close {
+  background: url(../assets/images/close.svg);
+  margin-right: 16.73px;
+}
+
+.link-btn:hover {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  transition: transform 1.5s ease-out;
+}
+
+.nav-content__logo {
+  margin-right: auto;
+}
+
+.nav-content__logo:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: all 1s ease;
+}
+
+.nav-btn__search {
+  background: url(../assets/images/search.svg);
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.menu_navigation {
+  padding: 0;
+  margin: 16px 0 48px;
+}
+
+.menu__menu-item {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  margin-top: 32px;
+  font-weight: 500;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s;
+}
+
+.menu-link::before {
+  content: url(../assets/images/highlight.svg);
+  position: absolute;
+  left: 0px;
+  transform: scaleY(0.68) translateY(-13px);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.menu-link:hover {
+  color: #7E7E82;
+}
+
+.menu-link:hover::before {
+  opacity: 1;
+}
+
+.main__section-flex {
+  margin-top: 30px;
+}
+
+.section {
+  padding-bottom: 16px;
+}
+
+.nav-btn__requestCall {
+  background: url(../assets/images/call.svg);
+}
+
+.nav-btn__feedback {
+  background: url(../assets/images/chat.svg);
+  margin-left: 16px;
+}
+
+.nav-btn__profile {
+  background: url(../assets/images/profile.svg);
+  margin-left: 16px;
+}
+
+.section__mail {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  margin-bottom: 12px;
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.section__mail:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: transform 1s ease;
+}
+
+.section__phone-number {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.6px;
+  margin: 0;
+}
+
+.section__phone-number:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: transform 1s ease;
+}
+
+.lang-switcher {
+  margin-top: 40px;
+}
+
+.lang-switcher__radio {
+  display: none;
+}
+
+.lang-switcher__label:hover {
+  cursor: pointer;
+}
+
+.lang-switcher__label {
+  margin-right: 6px;
+  transition: 0.3s;
+}
+
+.lang-switcher__radio:checked + .lang-switcher__label {
+  opacity: 0.5;
+}
