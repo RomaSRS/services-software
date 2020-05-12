@@ -78,7 +78,7 @@
   margin-left: 16px;
 }
 
-.nav-btn__requestCall {
+.nav-btn__request-call {
   background: url(assets/images/call.svg);
 }
 
@@ -94,7 +94,7 @@
   background: url(assets/images/repair.svg);
 }
 
-.nav-btn__checkStatus {
+.nav-btn__check-status {
   background: url(assets/images/checkstatus.svg);
 }
 
@@ -147,7 +147,7 @@
 }
 
 @media (max-width: 767px), (min-width: 1120px) {
-  .nav-btn__requestCall, 
+  .nav-btn__request-call, 
   .nav-btn__feedback, 
   .nav-btn__profile,
   .nav__separation:first-of-type {
