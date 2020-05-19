@@ -40,7 +40,7 @@
   position: relative;
 }
 
-.dropdown-menu_size {
+.dropdown-menu-size {
   box-sizing: border-box;
   width: 320px;
   overflow-y: scroll;
