@@ -60,7 +60,7 @@
   align-items: center;
 }
 
-.nav__btn-size {
+.link-btn {
   font-size: 0px;
   border: none;
   outline: none;
@@ -75,17 +75,14 @@
 .link-btn:hover {
   cursor: pointer;
   opacity: 0.8;
-}
-
-.nav-btn__close {
-  background: url(../assets/images/close.svg);
-  margin-right: 16.73px;
-}
-
-.link-btn:hover {
   transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
   transition: transform 1.5s ease-out;
+}
+
+.header-content__btn-close {
+  background: url(../assets/images/close.svg);
+  margin-right: 16.73px;
 }
 
 .header-content__logo {
@@ -98,7 +95,7 @@
   transition: all 1s ease;
 }
 
-.nav-btn__search {
+.header-content__btn-search {
   background: url(../assets/images/search.svg);
 }
 
@@ -152,21 +149,21 @@
   padding-bottom: 16px;
 }
 
-.nav-btn__requestCall {
+.nav__btn-requestCall {
   background: url(../assets/images/call.svg);
 }
 
-.nav-btn__feedback {
+.nav__btn-feedback {
   background: url(../assets/images/chat.svg);
   margin-left: 16px;
 }
 
-.nav-btn__profile {
+.nav__btn-profile {
   background: url(../assets/images/profile.svg);
   margin-left: 16px;
 }
 
-.contacts__link-decoration {
+.contacts-decoration {
   color: inherit;
   text-decoration: none;
   display: inline-block;
