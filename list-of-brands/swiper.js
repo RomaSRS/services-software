@@ -20,10 +20,10 @@
         spaceBetween: 16,
         slidesOffsetBefore: 16,
         
-        // autoplay: {
-        //   delay: 3000,
-        //   disableOnInteraction: false,
-        // },
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
         
         pagination: {
           clickable: true,
