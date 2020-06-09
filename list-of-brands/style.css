@@ -14,7 +14,7 @@ font-face {
   src: local('TT Lakes Regular'),
        local('TTLakes-Regular'),
        url(../../assets/fonts/TTLakes-Regular.eot) format('embedded-opentype'),
-       url(../../assets/assets/fonts/TTLakes-Regular.ttf) format('truetype'),
+       url(../../assets/fonts/TTLakes-Regular.ttf) format('truetype'),
        url(../../assets/fonts/TTLakes-Regular.woff) format('woff');
   font-weight: normal;
   font-style: normal;
@@ -157,7 +157,7 @@ font-face {
 }
 
 .expand-btn:hover::before {
-  transform: rotate(360deg) scale(1.5);
+  transform: rotate(180deg) scale(1.5);
 }
 
 .expand-btn:hover {

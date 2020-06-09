@@ -1,5 +1,7 @@
 'use strict';
 
+const newSwiper = document.querySelector('.swiper-container');
+
   (function() {
     const breakpoint = window.matchMedia( '(min-width:768px)' );
     let mySwiper;
@@ -13,7 +15,7 @@
     };
       
     const enableSwiper = function() {
-      mySwiper = new Swiper ('.swiper-container', {
+      mySwiper = new Swiper (newSwiper, {
         loop: true, 
         loopedSlides: 3,
         width: 240, 
@@ -38,4 +40,4 @@
     // kickstart
     breakpointChecker();
   
-  })(); /* IIFE end */
+  })();
