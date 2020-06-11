@@ -69,7 +69,7 @@ font-face {
   height: 72px;
 }
 
-.slide__item {
+.swiper-slide__item {
   width: 240px;
   height: 72px;
   box-sizing: border-box;
@@ -83,12 +83,12 @@ font-face {
   transition: 0.3s;
 }
 
-.slide__item:hover {
+.swiper-slide__item:hover {
   cursor: pointer;
   box-shadow: inset 0 0 20px 3px rgba(127,127,127,0.5);
 }
 
-.slide__link {
+.swiper-slide__link {
   font-size: 0px;
   border: none;
   outline: none;
@@ -102,7 +102,7 @@ font-face {
   transition: 0.3s;
 }
 
- .slide__link:hover {
+ .swiper-slide__link:hover {
   filter: drop-shadow(0 0 1px rgba(127,127,127,0.6));
   transition: all 0.3s;
   -webkit-tap-highlight-color: transparent;
@@ -210,7 +210,7 @@ font-face {
     max-height: none;
   }
   
-  .slide__item {
+  .swiper-slide__item {
     width: 224px;
     margin: 0 0 16px 24px;
   }
@@ -221,7 +221,7 @@ font-face {
     padding: 16px 32px;
   }
 
-  .slide__item {
+  .swiper-slide__item {
     width: 240px;
     margin: 0 0 16px 32px;
   }
