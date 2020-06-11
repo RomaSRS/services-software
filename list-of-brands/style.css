@@ -2,9 +2,9 @@ font-face {
   font-family: 'TT Lakes';
   src: local('TT Lakes Bold'),
        local('TTLakes-Bold'),
-       url(../assets/fonts/TTLakes-Bold.eot) format('embedded-opentype'),
-       url(../assets/fonts/TTLakes-Bold.ttf) format('truetype'),
-       url(../assets/fonts/TTLakes-Bold.woff) format('woff');
+       url(../../assets/fonts/TTLakes-Bold.eot) format('embedded-opentype'),
+       url(../../assets/fonts/TTLakes-Bold.ttf) format('truetype'),
+       url(../../assets/fonts/TTLakes-Bold.woff) format('woff');
   font-weight: bold;
   font-style: normal;
 }
@@ -13,9 +13,9 @@ font-face {
   font-family: 'TT Lakes';
   src: local('TT Lakes Regular'),
        local('TTLakes-Regular'),
-       url(../assets/fonts/TTLakes-Regular.eot) format('embedded-opentype'),
-       url(../assets/fonts/TTLakes-Regular.ttf) format('truetype'),
-       url(../assets/fonts/TTLakes-Regular.woff) format('woff');
+       url(../../assets/fonts/TTLakes-Regular.eot) format('embedded-opentype'),
+       url(../../assets/fonts/TTLakes-Regular.ttf) format('truetype'),
+       url(../../assets/fonts/TTLakes-Regular.woff) format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,9 +24,9 @@ font-face {
   font-family: 'TT Lakes';
   src: local('TT Lakes Medium'),
        local('TTLakes-Medium'),
-       url(../assets/fonts/TTLakes-Medium.eot) format('embedded-opentype'),
-       url(../assets/fonts/TTLakes-Medium.ttf) format('truetype'),
-       url(../assets/fonts/TTLakes-Medium.woff) format('woff');
+       url(../../assets/fonts/TTLakes-Medium.eot) format('embedded-opentype'),
+       url(../../assets/fonts/TTLakes-Medium.ttf) format('truetype'),
+       url(../../assets/fonts/TTLakes-Medium.woff) format('woff');
   font-weight: 500;
   font-style: normal;
 }
@@ -69,7 +69,7 @@ font-face {
   height: 72px;
 }
 
-.slide__item {
+.swiper-slide__item {
   width: 240px;
   height: 72px;
   box-sizing: border-box;
@@ -83,12 +83,12 @@ font-face {
   transition: 0.3s;
 }
 
-.slide__item:hover {
+.swiper-slide__item:hover {
   cursor: pointer;
   box-shadow: inset 0 0 20px 3px rgba(127,127,127,0.5);
 }
 
-.slide__link {
+.swiper-slide__link {
   font-size: 0px;
   border: none;
   outline: none;
@@ -97,12 +97,12 @@ font-face {
   height: 40px;
   width: 40px;
   padding: 0;
-  background: url(../assets/images/transition.svg);
+  background: url(../../assets/images/transition.svg);
   cursor: pointer;
   transition: 0.3s;
 }
 
- .slide__link:hover {
+ .swiper-slide__link:hover {
   filter: drop-shadow(0 0 1px rgba(127,127,127,0.6));
   transition: all 0.3s;
   -webkit-tap-highlight-color: transparent;
@@ -152,7 +152,7 @@ font-face {
   height: 24px;
   top: 4px;
   left: 4px;
-  background: url("../assets/images/expand.svg") 50% no-repeat;
+  background: url("../../assets/images/expand.svg") 50% no-repeat;
   transition: all 0.5s ease-in-out;
 }
 
@@ -210,7 +210,7 @@ font-face {
     max-height: none;
   }
   
-  .slide__item {
+  .swiper-slide__item {
     width: 224px;
     margin: 0 0 16px 24px;
   }
@@ -221,7 +221,7 @@ font-face {
     padding: 16px 32px;
   }
 
-  .slide__item {
+  .swiper-slide__item {
     width: 240px;
     margin: 0 0 16px 32px;
   }
